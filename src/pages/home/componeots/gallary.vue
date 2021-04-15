@@ -12,9 +12,9 @@
 </template>
 
 <script>
-    import CommonGallary from '../common/gallary/gallary'
+    import CommonGallary from 'common/gallary/gallary'
     export default {
-        name: 'banner',
+        name: 'indexgallary',
         props: {
 
         },
@@ -37,6 +37,9 @@
             handleGallaryClose () {
                 this.gallaryShow = false
             }
+        },
+        created() {//用vuex保存图片数量
+                this.$store.commit('imgLength', this.gallaryImgs.length)
         }
     }
 </script>

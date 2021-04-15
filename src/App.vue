@@ -5,5 +5,7 @@
 </template>
 
 <style lang="stylus">
-
+  body,#app{
+    height 100%
+  }
 </style>
